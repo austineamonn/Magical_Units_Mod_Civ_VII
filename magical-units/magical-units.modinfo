@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="magical-units" version="1"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MODULE_MAGICAL_UNITS_NAME</Name>
+		<Description>LOC_MODULE_MAGICAL_UNITS_DESCRIPTION</Description>
+		<Authors>Austin Nicolas</Authors>
+		<Package>DLC</Package>
+		<AffectsSavedGames>1</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+        <Criteria id="antiquity-age-current">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		</Criteria>
+		<!-- Mods -->
+		<Criteria id="unit-class-expanded-enable">
+            <ModInUse>spx-units-class-expanded</ModInUse>
+        </Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<!-- DLC and Modded Civ's Compatibility -->
+		<ActionGroup id="unit-class-expanded" scope="game" criteria="unit-class-expanded-enable">
+			<Actions>
+                <UpdateDatabase>
+					<Item>data/mods/spx-unit-class-expanded.xml</Item>
+                </UpdateDatabase>
+				<UpdateText>
+				</UpdateText>
+            </Actions>
+		</ActionGroup>
+		<!-- CCNE -->
+		<ActionGroup id="base-CCNE" scope="game" criteria="always">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/base/narrative-stories-antiquity.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/NarrativeStoriesText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="shell-CCNE" scope="shell" criteria="always">
+			<Actions>
+				<UpdateText>
+					<Item>text/en_us/NarrativeStoriesText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

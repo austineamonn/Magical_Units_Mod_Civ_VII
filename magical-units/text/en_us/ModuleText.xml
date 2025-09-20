@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_MODULE_MAGICAL_UNITS_NAME">
+			<Text>Magical Units</Text>
+		</Row>
+		<Row Tag="LOC_MODULE_MAGICAL_UNITS_DESCRIPTION">
+			<Text>Adds new magic/mythic inspired units.</Text>
+		</Row>
+	</EnglishText>
+</Database>
