@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Database>
+    <VisualRemaps>
+        <!-- Cultist -->
+        <Row>
+            <ID>REMAP_UNIT_CULTIST</ID>
+            <DisplayName>LOC_UNIT_CULTIST_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_CULTIST</From>
+            <To>UNIT_HOPLITE</To>
+        </Row>
+        <Row>
+            <ID>REMAP_UNIT_CULTIST_2</ID>
+            <DisplayName>LOC_UNIT_CULTIST_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_CULTIST_2</From>
+            <To>UNIT_HOPLITE</To>
+        </Row>
+        <!-- Dragon -->
+        <Row>
+            <ID>REMAP_UNIT_DRAGON</ID>
+            <DisplayName>LOC_UNIT_DRAGON_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_DRAGON</From>
+            <To>UNIT_PURABHETTARAH</To>
+        </Row>  
+        <!-- Living Forest -->
+        <Row>
+            <ID>REMAP_UNIT_LIVING_FOREST</ID>
+            <DisplayName>LOC_UNIT_LIVING_FOREST_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_LIVING_FOREST</From>
+            <To>UNIT_MEDJAY</To>
+        </Row>
+        <Row>
+            <ID>REMAP_UNIT_LIVING_FOREST_2</ID>
+            <DisplayName>LOC_UNIT_LIVING_FOREST_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_LIVING_FOREST_2</From>
+            <To>UNIT_MEDJAY</To>
+        </Row>
+        <Row>
+            <ID>REMAP_UNIT_LIVING_FOREST_3</ID>
+            <DisplayName>LOC_UNIT_LIVING_FOREST_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_LIVING_FOREST_3</From>
+            <To>UNIT_MEDJAY</To>
+        </Row>
+        <!-- Mage -->
+        <Row>
+            <ID>REMAP_UNIT_MAGE</ID>
+            <DisplayName>LOC_UNIT_MAGE_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_MAGE</From>
+            <To>UNIT_HULCHE</To>
+        </Row>
+        
+    </VisualRemaps>
+</Database>

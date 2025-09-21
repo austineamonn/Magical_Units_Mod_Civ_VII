@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+        <!-- Units -->
+
+         <Row Tag="LOC_UNIT_CULTIST_NAME">
+			<Text>Cultist</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CULTIST_DESCRIPTION">
+			<Text>Tier 2 Antiquity Magical Infantry Unit. +2 Combat Strength for each adjacent allied Cultist. -2 Combat Strength for each adjacent allied non Cultist. +5 healing when next to another Cultist.</Text>
+		</Row>
+        <Row Tag="LOC_UNIT_CULTIST_2_DESCRIPTION">
+			<Text>Tier 3 Antiquity Magical Infantry Unit. +2 Combat Strength for each adjacent allied Cultist. -2 Combat Strength for each adjacent allied non Cultist. +5 healing when next to another Cultist.</Text>
+		</Row>
+        <Row Tag="LOC_UNIT_DRAGON_NAME">
+			<Text>Dragon</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_DRAGON_DESCRIPTION">
+			<Text>Tier 3 Antiquity Magical Siege Unit. High Bombard strength for attacking Fortified Districts. Applies the Burning status to tiles for 2 turns. Ignores movement penalties from Wet and River Terrain. Can pillage for 1 movement. -5 Combat Strength for adjacent allied non Dragons.</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_LIVING_FOREST_NAME">
+			<Text>Living Forest</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_LIVING_FOREST_DESCRIPTION">
+			<Text>Tier 1 Antiquity Magical Cavalry Unit. Ignores Zone of Control. Ignores movement penalties from Vegetated Terrain. Gains 1 additional movement when starting on Vegetated Terrain. +3 Combat Strength on Vegetated Terrain and -3 Combat Strength on Urban Districts.</Text>
+		</Row>
+        <Row Tag="LOC_UNIT_LIVING_FOREST_2_DESCRIPTION">
+			<Text>Tier 2 Antiquity Magical Cavalry Unit. Ignores Zone of Control. Ignores movement penalties from Vegetated Terrain. Gains 1 additional movement when starting on Vegetated Terrain. +3 Combat Strength on Vegetated Terrain and -3 Combat Strength on Urban Districts.</Text>
+		</Row>
+        <Row Tag="LOC_UNIT_LIVING_FOREST_3_DESCRIPTION">
+			<Text>Tier 3 Antiquity Magical Cavalry Unit. Ignores Zone of Control. Ignores movement penalties from Vegetated Terrain. Gains 1 additional movement when starting on Vegetated Terrain. +3 Combat Strength on Vegetated Terrain and -3 Combat Strength on Urban Districts.</Text>
+		</Row>
+        <Row Tag="LOC_UNIT_MAGE_NAME">
+			<Text>Mage</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_MAGE_DESCRIPTION">
+			<Text>Tier 2 Antiquity Magical Ranged Unit. Stronger on attack than defense. Higher Vision and Range. -2 Combat Strength when defending against Infantry.</Text>
+		</Row>
+
+        <!-- Abilities -->
+
+        <Row Tag="LOC_CULTIST_HEAL_NAME">
+			<Text>Cultist Heal</Text>
+		</Row>
+        <Row Tag="LOC_CULTIST_HEAL_DESCRIPTION">
+			<Text>+5 healing when next to another Cultist.</Text>
+		</Row>
+        <Row Tag="LOC_CULTIST_GAIN_STRENGTH_NAME">
+			<Text>Stronger Together</Text>
+		</Row>
+        <Row Tag="LOC_CULTIST_GAIN_STRENGTH_DESCRIPTION">
+			<Text>+2 Combat Strength for each adjacent allied Cultist.</Text>
+		</Row>
+        <Row Tag="LOC_CULTIST_GAIN_STRENGTH_PREVIEW">
+			<Text>+{1_Amount} for adjacent allied Cultist.</Text>
+		</Row>
+        <Row Tag="LOC_CULTIST_LOSE_STRENGTH_NAME">
+			<Text>Weaker Apart</Text>
+		</Row>
+        <Row Tag="LOC_CULTIST_LOSE_STRENGTH_DESCRIPTION">
+			<Text>-2 Combat Strength for each adjacent allied non Cultist.</Text>
+		</Row>
+        <Row Tag="LOC_CULTIST_LOSE_STRENGTH_PREVIEW">
+			<Text>-{1_Amount} for adjacent allied non Cultist.</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_BURN_TILES_NAME">
+			<Text>Dragon Burn Tiles</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_BURN_TILES_DESCRIPTION">
+			<Text>Applies the Burning status to tiles for 2 turns.</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_IGNORE_WET_RIVER_TERRAIN_NAME">
+			<Text>Dragon Ignore Wet and River Terrain</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_IGNORE_WET_RIVER_TERRAIN_DESCRIPTION">
+			<Text>Ignores movement penalties from Wet and River Terrain.</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_PILLAGE_NAME">
+			<Text>Dragon Pillage</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_PILLAGE_DESCRIPTION">
+			<Text>Can pillage for 1 movement</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_STRENGTH_REDUCTION_NAME">
+			<Text>Fear of Dragons</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_STRENGTH_REDUCTION_DESCRIPTION">
+			<Text>-5 Combat Strength for each adjacent Dragon.</Text>
+		</Row>
+        <Row Tag="LOC_DRAGON_STRENGTH_REDUCTION_PREVIEW">
+			<Text>-{1_Amount} for adjacent Dragons.</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_GAIN_MOVEMENT_NAME">
+			<Text>From the Trees</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_GAIN_MOVEMENT_DESCRIPTION">
+			<Text>Gains 1 additional movement when starting on Vegetated Terrain.</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_GAIN_STRENGTH_NAME">
+			<Text>Living Forest Vegetated Strength</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_GAIN_STRENGTH_DESCRIPTION">
+			<Text>+3 Combat Strength on Vegetated Terrain.</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_GAIN_STRENGTH_PREVIEW">
+			<Text>+{1_Amount} on Vegetated Terrain.</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN_NAME">
+			<Text>Living Forest Ignore Vegetated Terrain</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN_DESCRIPTION">
+			<Text>Ignores movement penalties from Vegetated Terrain.</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_LOSE_STRENGTH_NAME">
+			<Text>Living Forest Urban Strength</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_LOSE_STRENGTH_DESCRIPTION">
+			<Text>-3 Combat Strength on Urban Districts.</Text>
+		</Row>
+        <Row Tag="LOC_LIVING_FOREST_LOSE_STRENGTH_PREVIEW">
+			<Text>+{1_Amount} on Urban Districts.</Text>
+		</Row>
+        <Row Tag="LOC_MAGE_DEFENSE_NAME">
+			<Text>Living Forest Urban Strength</Text>
+		</Row>
+        <Row Tag="LOC_MAGE_DEFENSE_DESCRIPTION">
+			<Text>-3 Combat Strength on Urban Districts.</Text>
+		</Row>
+        <Row Tag="LOC_MAGE_DEFENSE_PREVIEW">
+			<Text>-{1_Amount} when defending against Infantry.</Text>
+		</Row>
+
+	</EnglishText>
+</Database>

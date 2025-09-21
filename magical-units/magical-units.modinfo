@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="magical-units" version="1"
+<Mod id="magical-units" version="0.1"
 	xmlns="ModInfo">
 	<Properties>
 		<Name>LOC_MODULE_MAGICAL_UNITS_NAME</Name>
@@ -19,13 +19,23 @@
 			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
 		</Criteria>
 		<!-- Mods -->
-		<Criteria id="unit-class-expanded-enable">
+		<!--<Criteria id="unit-class-expanded-enable">
             <ModInUse>spx-units-class-expanded</ModInUse>
-        </Criteria>
+        </Criteria>-->
+		<!--<Criteria all="true" id="izica-unit-portrait-visual-remaps-enable">
+            <ModInUse>izica-unit-portrait-visual-remaps</ModInUse>
+        </Criteria>-->
 	</ActionCriteria>
 	<ActionGroups>
-		<!-- DLC and Modded Civ's Compatibility -->
-		<ActionGroup id="unit-class-expanded" scope="game" criteria="unit-class-expanded-enable">
+		<!-- Mod Compatibility -->
+		<!--<ActionGroup id="izica-unit-portrait-visual-remaps" scope="game" criteria="izica-unit-portrait-visual-remaps-enable">
+			<Actions>
+				<UIScripts>
+					<Item>ui/game.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>-->
+		<!--<ActionGroup id="unit-class-expanded" scope="game" criteria="unit-class-expanded-enable">
 			<Actions>
                 <UpdateDatabase>
 					<Item>data/mods/spx-unit-class-expanded.xml</Item>
@@ -33,22 +43,41 @@
 				<UpdateText>
 				</UpdateText>
             </Actions>
-		</ActionGroup>
-		<!-- CCNE -->
-		<ActionGroup id="base-CCNE" scope="game" criteria="always">
+		</ActionGroup>-->
+		<!-- Magical Units -->
+		<ActionGroup id="magical-units-antiquity" scope="game" criteria="antiquity-age-current">
 			<Actions>
+				<ImportFiles>
+					<Item>icons/unit_flag_icon_cultist.png</Item>
+					<Item>icons/unit_flag_icon_dragon.png</Item>
+					<Item>icons/unit_flag_icon_living_forest.png</Item>
+					<Item>icons/unit_flag_icon_mage.png</Item>
+				</ImportFiles>
+				<UpdateIcons>
+					<Item>data/units-icons.xml</Item>
+				</UpdateIcons>
 				<UpdateDatabase>
-					<Item>data/base/narrative-stories-antiquity.xml</Item>
+					<Item>data/units.xml</Item>
+					<Item>data/units-gameeffects.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
-					<Item>text/en_us/NarrativeStoriesText.xml</Item>
+					<Item>text/en_us/UnitsText.xml</Item>
 				</UpdateText>
+				<UpdateVisualRemaps>
+					<Item>data/visual-remaps.xml</Item>
+				</UpdateVisualRemaps>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="shell-CCNE" scope="shell" criteria="always">
 			<Actions>
+				<ImportFiles>
+					<Item>icons/unit_flag_icon_cultist.png</Item>
+					<Item>icons/unit_flag_icon_dragon.png</Item>
+					<Item>icons/unit_flag_icon_living_forest.png</Item>
+					<Item>icons/unit_flag_icon_mage.png</Item>
+				</ImportFiles>
 				<UpdateText>
-					<Item>text/en_us/NarrativeStoriesText.xml</Item>
+					<Item>text/en_us/UnitsText.xml</Item>
 				</UpdateText>
 			</Actions>
 		</ActionGroup>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <Types>
+        <!-- Tier 1 -->
+        <Row Type="UNIT_LIVING_FOREST" Kind="KIND_UNIT"/>
+        <!-- Tier 2 -->
+        <Row Type="UNIT_CULTIST" Kind="KIND_UNIT"/>
+        <Row Type="UNIT_LIVING_FOREST_2" Kind="KIND_UNIT"/>
+        <Row Type="UNIT_MAGE" Kind="KIND_UNIT"/>
+        <!-- Tier 3 -->
+        <Row Type="UNIT_CULTIST_2" Kind="KIND_UNIT"/>
+        <Row Type="UNIT_LIVING_FOREST_3" Kind="KIND_UNIT"/>
+        <Row Type="UNIT_DRAGON" Kind="KIND_UNIT"/>
+
+        <!-- Abilities -->
+        <Row Type="ABILITY_CULTIST_HEAL" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_CULTIST_GAIN_STRENGTH" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_CULTIST_LOSE_STRENGTH" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_DRAGON_BURN_TILES" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_DRAGON_STRENGTH_REDUCTION" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_LIVING_FOREST_GAIN_MOVEMENT" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_LIVING_FOREST_GAIN_STRENGTH" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_LIVING_FOREST_LOSE_STRENGTH" Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_MAGE_DEFENSE" Kind="KIND_ABILITY"/>
+
+    </Types>
+    <Units>
+        <!-- Tier 1 -->
+        <Row UnitType="UNIT_LIVING_FOREST" Name="LOC_UNIT_LIVING_FOREST_NAME" Description="LOC_UNIT_LIVING_FOREST_DESCRIPTION" Tier="1" Maintenance="1" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true"/>
+        <!-- Tier 2 -->
+        <Row UnitType="UNIT_CULTIST" Name="LOC_UNIT_CULTIST_NAME" Description="LOC_UNIT_CULTIST_DESCRIPTION" Tier="2" Maintenance="1" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true"/>
+        <Row UnitType="UNIT_LIVING_FOREST_2" Name="LOC_UNIT_LIVING_FOREST_NAME" Description="LOC_UNIT_LIVING_FOREST_2_DESCRIPTION" Tier="1" Maintenance="2" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true"/>
+        <Row UnitType="UNIT_MAGE" Name="LOC_UNIT_MAGE_NAME" Description="LOC_UNIT_MAGE_DESCRIPTION" Tier="2" Maintenance="2" BaseSightRange="3" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="false"/>
+        <!-- Tier 3 -->
+        <Row UnitType="UNIT_CULTIST_2" Name="LOC_UNIT_CULTIST_NAME" Description="LOC_UNIT_CULTIST_2_DESCRIPTION" Tier="2" Maintenance="2" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true"/>
+        <Row UnitType="UNIT_DRAGON" Name="LOC_UNIT_DRAGON_NAME" Description="LOC_UNIT_DRAGON_DESCRIPTION" Tier="2" Maintenance="5" BaseSightRange="2" BaseMoves="3" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true"/>
+        <Row UnitType="UNIT_LIVING_FOREST_3" Name="LOC_UNIT_LIVING_FOREST_NAME" Description="LOC_UNIT_LIVING_FOREST_3_DESCRIPTION" Tier="1" Maintenance="3" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true"/>
+    </Units>
+    <Unit_Stats>
+        <!-- Tier 1 -->
+        <Row UnitType="UNIT_LIVING_FOREST" Combat="25"/>
+        <!-- Tier 2 -->
+        <Row UnitType="UNIT_CULTIST" Combat="20"/>
+        <Row UnitType="UNIT_LIVING_FOREST_2" Combat="30"/>
+        <Row UnitType="UNIT_MAGE" Combat="10" RangedCombat="20" Bombard="10" Range="3"/>
+        <!-- Tier 3 -->
+        <Row UnitType="UNIT_CULTIST_2" Combat="25"/>
+        <Row UnitType="UNIT_DRAGON" Combat="25" RangedCombat="20" Bombard="40" Range="2"/>
+        <Row UnitType="UNIT_LIVING_FOREST_3" Combat="35"/>
+    </Unit_Stats>
+    <Unit_Costs>
+        <!-- Tier 1 -->
+        <Row UnitType="UNIT_LIVING_FOREST" YieldType="YIELD_PRODUCTION" Cost="60"/>
+        <!-- Tier 2 -->
+        <Row UnitType="UNIT_CULTIST" YieldType="YIELD_PRODUCTION" Cost="60"/>
+        <Row UnitType="UNIT_LIVING_FOREST_2" YieldType="YIELD_PRODUCTION" Cost="80"/>
+        <Row UnitType="UNIT_MAGE" YieldType="YIELD_PRODUCTION" Cost="80"/>
+        <!-- Tier 3 -->
+        <Row UnitType="UNIT_CULTIST_2" YieldType="YIELD_PRODUCTION" Cost="100"/>
+        <Row UnitType="UNIT_DRAGON" YieldType="YIELD_PRODUCTION" Cost="130"/>
+        <Row UnitType="UNIT_LIVING_FOREST_3" YieldType="YIELD_PRODUCTION" Cost="120"/>
+    </Unit_Costs>
+    <UnitUpgrades>
+        <Row Unit="UNIT_CULTIST" UpgradeUnit="UNIT_CULTIST_2"/>
+        <Row Unit="UNIT_LIVING_FOREST" UpgradeUnit="UNIT_LIVING_FOREST_2"/>
+        <Row Unit="UNIT_LIVING_FOREST_2" UpgradeUnit="UNIT_LIVING_FOREST_3"/>
+    </UnitUpgrades>
+    <Tags>
+        <Row Tag="UNIT_CLASS_CULTIST" Category="UNIT_CLASS"/>
+        <Row Tag="UNIT_CLASS_DRAGON" Category="UNIT_CLASS"/>
+        <Row Tag="UNIT_CLASS_LIVING_FOREST" Category="UNIT_CLASS"/>
+        <Row Tag="UNIT_CLASS_MAGE" Category="UNIT_CLASS"/>
+        <Row Tag="UNIT_CLASS_MAGICAL" Category="UNIT_CLASS"/>
+    </Tags>
+    <TypeTags>
+        <!-- Tier 1 -->
+        <Row Type="UNIT_LIVING_FOREST" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_LIVING_FOREST" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_LIVING_FOREST" Tag="UNIT_CLASS_MOUNTED"/>
+        <Row Type="UNIT_LIVING_FOREST" Tag="UNIT_CLASS_LIVING_FOREST"/>
+        <Row Type="UNIT_LIVING_FOREST" Tag="UNIT_CLASS_MAGICAL"/>
+        <!-- Tier 2 -->
+        <Row Type="UNIT_CULTIST" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_CULTIST" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_CULTIST" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_CULTIST" Tag="UNIT_CLASS_CULTIST"/>
+        <Row Type="UNIT_CULTIST" Tag="UNIT_CLASS_MAGICAL"/>
+        <Row Type="UNIT_LIVING_FOREST_2" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_LIVING_FOREST_2" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_LIVING_FOREST_2" Tag="UNIT_CLASS_MOUNTED"/>
+        <Row Type="UNIT_LIVING_FOREST_2" Tag="UNIT_CLASS_LIVING_FOREST"/>
+        <Row Type="UNIT_LIVING_FOREST_2" Tag="UNIT_CLASS_MAGICAL"/>
+        <Row Type="UNIT_MAGE" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_MAGE" Tag="UNIT_CLASS_RANGED"/>
+        <Row Type="UNIT_MAGE" Tag="UNIT_CLASS_MAGE"/>
+        <Row Type="UNIT_MAGE" Tag="UNIT_CLASS_MAGICAL"/>
+        <!-- Tier 3 -->
+        <Row Type="UNIT_CULTIST_2" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_CULTIST_2" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_CULTIST_2" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_CULTIST_2" Tag="UNIT_CLASS_ELITE_INFANTRY"/>
+        <Row Type="UNIT_CULTIST_2" Tag="UNIT_CLASS_CULTIST"/>
+        <Row Type="UNIT_CULTIST_2" Tag="UNIT_CLASS_MAGICAL"/>
+        <Row Type="UNIT_DRAGON" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_DRAGON" Tag="UNIT_CLASS_WHEELED"/>
+		<Row Type="UNIT_DRAGON" Tag="UNIT_CLASS_SIEGE"/>
+        <Row Type="UNIT_DRAGON" Tag="UNIT_CLASS_DRAGON"/>
+        <Row Type="UNIT_DRAGON" Tag="UNIT_CLASS_MAGICAL"/>
+        <Row Type="UNIT_LIVING_FOREST_3" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_LIVING_FOREST_3" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_LIVING_FOREST_3" Tag="UNIT_CLASS_MOUNTED"/>
+        <Row Type="UNIT_LIVING_FOREST_3" Tag="UNIT_CLASS_ELITE_CAVALRY"/>
+        <Row Type="UNIT_LIVING_FOREST_3" Tag="UNIT_CLASS_LIVING_FOREST"/>
+        <Row Type="UNIT_LIVING_FOREST_3" Tag="UNIT_CLASS_MAGICAL"/>
+    </TypeTags>
+    <UnitClass_Abilities>
+        <Row UnitAbilityType="ABILITY_CULTIST_HEAL" 
+        UnitClassType="UNIT_CLASS_CULTIST"/>
+        <Row UnitAbilityType="ABILITY_CULTIST_GAIN_STRENGTH" UnitClassType="UNIT_CLASS_CULTIST"/>
+        <Row UnitAbilityType="ABILITY_CULTIST_LOSE_STRENGTH" UnitClassType="UNIT_CLASS_CULTIST"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_BURN_TILES" UnitClassType="UNIT_CLASS_DRAGON"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" UnitClassType="UNIT_CLASS_DRAGON"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_PILLAGE" UnitClassType="UNIT_CLASS_DRAGON"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_GAIN_MOVEMENT" UnitClassType="UNIT_CLASS_LIVING_FOREST"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_GAIN_STRENGTH" UnitClassType="UNIT_CLASS_LIVING_FOREST"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN" UnitClassType="UNIT_CLASS_LIVING_FOREST"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_LOSE_STRENGTH" UnitClassType="UNIT_CLASS_LIVING_FOREST"/>
+        <Row UnitAbilityType="ABILITY_MAGE_DEFENSE" UnitClassType="UNIT_CLASS_MAGE"/>
+    </UnitClass_Abilities>
+    <UnitAbilities>
+        <Row UnitAbilityType="ABILITY_CULTIST_HEAL" Name="LOC_CULTIST_HEAL_NAME" Description="LOC_CULTIST_HEAL_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_CULTIST_GAIN_STRENGTH" Name="LOC_CULTIST_GAIN_STRENGTH_NAME" Description="LOC_CULTIST_GAIN_STRENGTH_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_CULTIST_LOSE_STRENGTH" Name="LOC_CULTIST_LOSE_STRENGTH_NAME" Description="LOC_CULTIST_LOSE_STRENGTH_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_BURN_TILES" Name="LOC_DRAGON_BURN_TILES_NAME" Description="LOC_DRAGON_BURN_TILES_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" Name="LOC_DRAGON_IGNORE_WET_RIVER_TERRAIN_NAME" Description="LOC_DRAGON_IGNORE_WET_RIVER_TERRAIN_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_STRENGTH_REDUCTION" Name="LOC_DRAGON_STRENGTH_REDUCTION_NAME" Description="LOC_DRAGON_STRENGTH_REDUCTION_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_PILLAGE" Name="LOC_DRAGON_PILLAGE_NAME" Description="LOC_DRAGON_PILLAGE_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_GAIN_MOVEMENT" Name="LOC_LIVING_FOREST_GAIN_MOVEMENT_NAME" Description="LOC_LIVING_FOREST_GAIN_MOVEMENT_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_GAIN_STRENGTH" Name="LOC_LIVING_FOREST_GAIN_STRENGTH_NAME" Description="LOC_LIVING_FOREST_GAIN_STRENGTH_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN" Name="LOC_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN_NAME" Description="LOC_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_LOSE_STRENGTH" Name="LOC_LIVING_FOREST_LOSE_STRENGTH_NAME" Description="LOC_LIVING_FOREST_LOSE_STRENGTH_DESCRIPTION"/>
+        <Row UnitAbilityType="ABILITY_MAGE_DEFENSE" Name="LOC_MAGE_DEFENSE_NAME" Description="LOC_MAGE_DEFENSE_DESCRIPTION"/>
+    </UnitAbilities>
+    <UnitAbilityModifiers>
+        <Row UnitAbilityType="ABILITY_CULTIST_HEAL" ModifierId="CULTIST_ADJACENT_CULTIST_UNIT_HEAL_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_CULTIST_GAIN_STRENGTH" ModifierId="CULTIST_ADJACENT_CULTIST_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_CULTIST_LOSE_STRENGTH" ModifierId="CULTIST_ADJACENT_NON_CULTIST_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_BURN_TILES" ModifierId="DRAGON_BURNING_PLOT_EFFECT"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" ModifierId="DRAGON_IGNORE_MINOR_RIVER_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" ModifierId="DRAGON_IGNORE_OASIS_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" ModifierId="DRAGON_IGNORE_MARSH_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" ModifierId="DRAGON_IGNORE_WATERING_HOLE_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" ModifierId="DRAGON_IGNORE_MANGROVE_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_IGNORE_WET_RIVER_TERRAIN" ModifierId="DRAGON_IGNORE_TUNDRA_BOG_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_PILLAGE" ModifierId="DRAGON_ADVANCED_PILLAGE_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_DRAGON_STRENGTH_REDUCTION" ModifierId="DRAGON_STRENGTH_REDUCTION_SUB_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_GAIN_MOVEMENT" ModifierId="LIVING_FOREST_ADJUST_MOVEMENT_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_GAIN_STRENGTH" ModifierId="LIVING_FOREST_VEGETATED_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_IGNORE_VEGETATED_TERRAIN" ModifierId="LIVING_FOREST_IGNORE_VEGETATION_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_LIVING_FOREST_LOSE_STRENGTH" ModifierId="LIVING_FOREST_URRBAN_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER"/>
+        <Row UnitAbilityType="ABILITY_MAGE_DEFENSE" ModifierId="MAGE_DEFENSE_MODIFIER"/>
+    </UnitAbilityModifiers>
+    <Unit_Advisories>
+        <Row UnitType="UNIT_CULTIST" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+        <Row UnitType="UNIT_CULTIST_2" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+        <Row UnitType="UNIT_DRAGON" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+        <Row UnitType="UNIT_LIVING_FOREST" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+        <Row UnitType="UNIT_LIVING_FOREST_2" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+        <Row UnitType="UNIT_LIVING_FOREST_3" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+        <Row UnitType="UNIT_MAGE" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+    </Unit_Advisories>
+</Database>

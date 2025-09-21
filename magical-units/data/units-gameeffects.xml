@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+
+    <!-- Cultist -->
+
+	<Modifier id="CULTIST_ADJACENT_CULTIST_UNIT_HEAL_MODIFIER" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_HEAL_PER_TURN">
+        <SubjectRequirements>
+            <Requirement type="REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_CULTIST</Argument>
+				<Argument name="IncludeCenter">false</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">5</Argument>
+	</Modifier>
+    <Modifier id="CULTIST_ADJACENT_CULTIST_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_NEIGHBOR_COMBAT_MODIFIER">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_CULTIST</Argument>
+				<Argument name="IncludeCenter">false</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">2</Argument>
+		<String context="Preview">LOC_CULTIST_GAIN_STRENGTH_PREVIEW</String>
+	</Modifier>
+    <Modifier id="CULTIST_ADJACENT_NON_CULTIST_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_NEIGHBOR_COMBAT_MODIFIER">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES" inverse="true">
+				<Argument name="Tag">UNIT_CLASS_CULTIST</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">-2</Argument>
+		<String context="Preview">LOC_CULTIST_LOSE_STRENGTH_PREVIEW</String>
+	</Modifier>
+
+	<!-- Dragon -->
+
+    <Modifier id="DRAGON_BURNING_PLOT_EFFECT" collection="COLLECTION_OWNER" effect="EFFECT_ADJUST_UNIT_ATTACK_CREATES_PLOT_EFFECT">
+		<Argument name="PlotEffect">PLOTEFFECT_IS_BURNING</Argument>
+	</Modifier>
+    <Modifier id="DRAGON_IGNORE_MINOR_RIVER_MODIFIER" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE">
+		<Argument name="Obstacle">RIVER_MINOR</Argument>
+	</Modifier>
+    <Modifier id="DRAGON_IGNORE_OASIS_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE">
+		<Argument name="Obstacle">FEATURE_OASIS</Argument>
+	</Modifier>
+	<Modifier id="DRAGON_IGNORE_MARSH_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE">
+		<Argument name="Obstacle">FEATURE_MARSH</Argument>
+	</Modifier>
+	<Modifier id="DRAGON_IGNORE_WATERING_HOLE_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE">
+		<Argument name="Obstacle">FEATURE_WATERING_HOLE</Argument>
+	</Modifier>
+	<Modifier id="DRAGON_IGNORE_MANGROVE_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE">
+		<Argument name="Obstacle">FEATURE_MANGROVE</Argument>
+	</Modifier>
+	<Modifier id="DRAGON_IGNORE_TUNDRA_BOG_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE">
+		<Argument name="Obstacle">FEATURE_TUNDRA_BOG</Argument>
+	</Modifier>
+    <Modifier id="DRAGON_ADVANCED_PILLAGE_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_ADJUST_UNIT_ADVANCED_PILLAGING">
+		<Argument name="UseAdvancedPillaging">true</Argument>
+	</Modifier>
+    <Modifier id="DRAGON_STRENGTH_REDUCTION_MODIFIER" collection="COLLECTION_ALL_UNITS" effect="EFFECT_UNIT_ADJUST_ABILITY">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_UNIT_TAG_MATCHES" inverse="true">
+				<Argument name="Tag">UNIT_CLASS_DRAGON</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="AbilityType">ABILITY_DRAGON_STRENGTH_REDUCTION</Argument>
+	</Modifier>
+	<Modifier id="DRAGON_STRENGTH_REDUCTION_SUB_MODIFIER" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLOT_ADJACENT_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_DRAGON</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">-5</Argument>
+		<String context="Preview">LOC_DRAGON_STRENGTH_REDUCTION_PREVIEW</String>
+	</Modifier>
+
+    <!-- Living Forest-->
+
+	<Modifier id="LIVING_FOREST_ADJUST_MOVEMENT_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_UNIT_ADJUST_MOVEMENT">
+        <SubjectRequirements>
+            <Requirement type="REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES">
+                <Argument name="FeatureClassType">FEATURE_CLASS_VEGETATED</Argument>
+            </Requirement>
+        </SubjectRequirements>
+        <Argument name="Amount">1</Argument>
+	</Modifier>
+    <Modifier id="LIVING_FOREST_VEGETATED_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<SubjectRequirements type="REQUIREMENTSET_TEST_ANY">
+			<Requirement type="REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES">
+				<Argument name="FeatureClassType">FEATURE_CLASS_VEGETATED</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">3</Argument>
+		<String context="Preview">LOC_LIVING_FOREST_GAIN_STRENGTH_PREVIEW</String>
+	</Modifier>
+    <Modifier id="LIVING_FOREST_IGNORE_VEGETATION_MODIFIER" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_IGNORE_MOVEMENT_OBSTACLE">
+		<Argument name="FeatureClassTypes">FEATURE_CLASS_VEGETATED</Argument>
+	</Modifier>
+	<Modifier id="LIVING_FOREST_URRBAN_ADJUST_UNIT_COMBAT_STRENGTH_MODIFIER" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<SubjectRequirements type="REQUIREMENTSET_TEST_ANY">
+			<Requirement type="REQUIREMENT_PLOT_DISTRICT_CLASS">
+				<Argument name="DistrictClass">CITYCENTER, URBAN</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">-3</Argument>
+		<String context="Preview">LOC_LIVING_FOREST_LOSE_STRENGTH_PREVIEW</String>
+	</Modifier>
+
+	<!-- Mage -->
+
+    <Modifier id="MAGE_DEFENSE_MODIFIER" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_IS_ATTACKING" inverse="true"/>
+            <Requirement type="REQUIREMENT_OPPONENT_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_INFANTRY</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">3</Argument>
+		<String context="Preview">LOC_MAGE_DEFENSE_PREVIEW</String>
+	</Modifier>
+
+</GameEffects>

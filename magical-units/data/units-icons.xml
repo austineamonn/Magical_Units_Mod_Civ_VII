@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Database>
+    <IconDefinitions>
+        <Row>
+            <ID>UNIT_CULTIST</ID>
+            <Path>fs://game/magical-units/icons/unit_flag_icon_cultist.png</Path>
+            <Context>DEFAULT</Context>
+        </Row>
+        <Row>
+            <ID>UNIT_CULTIST_2</ID>
+            <Path>fs://game/magical-units/icons/unit_flag_icon_cultist.png</Path>
+            <Context>DEFAULT</Context>
+        </Row>
+        <Row>
+            <ID>UNIT_DRAGON</ID>
+            <Path>fs://game/magical-units/icons/unit_flag_icon_dragon.png</Path>
+            <Context>DEFAULT</Context>
+        </Row>
+        <Row>
+            <ID>UNIT_LIVING_FOREST</ID>
+            <Path>fs://game/magical-units/icons/unit_flag_icon_living_forest.png</Path>
+            <Context>DEFAULT</Context>
+        </Row>
+        <Row>
+            <ID>UNIT_LIVING_FOREST_2</ID>
+            <Path>fs://game/magical-units/icons/unit_flag_icon_living_forest.png</Path>
+            <Context>DEFAULT</Context>
+        </Row>
+        <Row>
+            <ID>UNIT_LIVING_FOREST_3</ID>
+            <Path>fs://game/magical-units/icons/unit_flag_icon_living_forest.png</Path>
+            <Context>DEFAULT</Context>
+        </Row>
+        <Row>
+            <ID>UNIT_MAGE</ID>
+            <Path>fs://game/magical-units/icons/unit_flag_icon_mage.png</Path>
+            <Context>DEFAULT</Context>
+        </Row>
+    </IconDefinitions>
+</Database>
